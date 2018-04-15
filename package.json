@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/react-fontawesome": "0.0.18",
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "gulp-changed": "^3.2.0",
