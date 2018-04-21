@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {
   Switch
 } from 'react-router-dom';
+import independent from '../../Assets/images/independent.jpg';
+
 
 class Contact extends Component {
   render() {
@@ -65,21 +67,7 @@ class Contact extends Component {
               </div>
             </div>
             <div className="col-md-4">
-              <form>
-                <legend><span className="glyphicon glyphicon-globe"></span> Our office</legend>
-                <address>
-                  <strong>Twitter, Inc.</strong><br />
-                    795 Folsom Ave, Suite 600<br />
-                      San Francisco, CA 94107<br />
-                    <abbr title="Phone">
-                      P:</abbr>
-                    (123) 456-7890
-              </address>
-                  <address>
-                    <strong>Full Name</strong><br />>
-                      <a href="mailto:#">first.last@example.com</a>
-              </address>
-              </form>
+             <img src={independent}/>s
           </div>
       </div>
             </div>

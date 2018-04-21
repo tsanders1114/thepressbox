@@ -21,8 +21,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Header />
-        <Footer />
+          <Header /> 
           
           <Switch>
             <Route exact path='/' component={Homepage} />

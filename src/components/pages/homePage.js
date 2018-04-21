@@ -5,54 +5,39 @@ import {
   Switch
 } from 'react-router-dom';
 import Footer from '../footerComponent/footer';
+import CSS from "./homepage.css";
 
 class Homepage extends Component {
   render() {
     return (
-      <div style={{ width: '100', margin: 'auto' }}>
-        <Grid className="homepage-grid">
-          <Cell col={12}>
-            <img
-              src={independent}
-              alt="indiecall"
-              className="indiecall-img"
-            />
-            <div className="banner-text">
-              <h1>Explore</h1>
-
-              <hr />
-
-              <p>Independent Creators Works From Around The Globe</p>
-              <p>Music Works|Film Works|Motivational Works|Visual Works</p>
-
-              <div className="explore-links">
-                {/*Music Link To Explore Page*/}
-                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                  <i className="fas fa-music" aria-hidden="true" />
-                </a>
-                {/*Film Link To Explore Page*/}
-                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                  <i className="fas fa-film" aria-hidden="true" />
-                </a>
-                {/*Motivation Link To Explore Page*/}
-                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                  <i className="fas fa-child" aria-hidden="true" />
-                </a>
-                {/*Visual Link To Explore Page*/}
-                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                  <i className="fas fa-eye" aria-hidden="true" />
-                </a>
-
+      <div className="site-wrapper">
+        <div className="site-wrapper-inner">
+          <div className="cover-container">
+            <div className="masthead clearfix">
+              <div className="inner">
+                <h3 className="masthead-brand">The PressBox</h3>
 
 
               </div>
             </div>
-          </Cell>
-          <Footer />
-          
-        </Grid>
-      </div>
 
+            <div className="inner cover">
+
+
+
+
+              <p className="lead"><a class="btn btn-lg btn-info" href="#">Explore Independence</a></p>
+            </div>
+
+            <div className="mastfoot">
+              <div className="inner">
+                {/* <!-- Validation --> */}
+                <p>© 2018 Timothy Sanders~ </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     );
   }

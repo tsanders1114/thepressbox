@@ -80,7 +80,8 @@
 
 }
 
-.jumbotron iframe{
+.intro-video{
+    padding-top: 15px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -93,7 +94,7 @@
     margin-left: auto;
     height: 180px;
     width: 100%;
-    display: block;
+    display: block; 
 }
 
 .row{
@@ -162,7 +163,10 @@ body{background-color: #fff;}
 
 /* Contact Page  */
 .jumbotron {
-    background: #358CCE;
+    margin-left: 30px;
+    margin-right:30px;
+    margin-top:20px;
+    background: rgb(2, 14, 24);
     color: #FFF;
     border-radius: 0px;
     }
@@ -181,16 +185,24 @@ body{background-color: #fff;}
 
     /* SignUp Page */
     .form-inline{
-        background: greenyellow;
+        background: rgb(68, 29, 2);
+        margin-left: 20px;
+        margin-right:20px;
     }
 
 
 
     /* About Page  */
 
-    
+   .band h1 h2 em strong{
+        color:blue;
+    }
     p .about-description {
         text-align: center;
         font-family: 'Cinzel', serif;
         font-style: bold;
+    }
+
+    .band h1,h2,{
+        text-decoration-color: black;
     }
