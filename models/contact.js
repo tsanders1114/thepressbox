@@ -13,11 +13,11 @@ const contactUsSchema = new Schema({
         required: [true, "Must Enter email"],
         unique:[true,"Email not Valid"],
         minlength:[6,"Email must be 6 characters"],
-        maxlength:[12,"Email must be no more than 12 characters"],  
+        maxlength:[50,"Email must be no more than 12 characters"],  
     },
     Subject:{
         type:String,
-        required:[true,"Must Enter Subject"],
+        required:[false,"Must Enter Subject"],
         unique:[true, "Subject is required" ],
         minlength:[8,"Subject must be 8 characters"],
         maxlength:[20,"Subject must be no more than 20 characters"],

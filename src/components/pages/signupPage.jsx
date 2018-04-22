@@ -12,8 +12,17 @@ class Signup extends Component {
     }
   }
 
-  signUp(){
+  signUp(event){
     console.log('this.state',this.state);
+    event.preventDefault();
+
+		axios.post('http://localhost:3001/signup', this.state)
+			.then(function (response) {
+				alert(response.data);
+			})
+			.catch(function (error) {
+				alert(error);
+			});
   }
   render() {
     return (
