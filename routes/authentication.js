@@ -1,7 +1,10 @@
+
+
 const
     router = require('express').Router(),
     Account = require('../models/index').Account,
     passport = require('passport');
+    Axios=require('axios');
 
 router.post('/signup', function (req, res) {
     Account.register(new Account({

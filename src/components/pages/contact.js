@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // Switch
 // } from 'react-router-dom';
 import independent from '../../Assets/images/independent.jpg';
-
+import axios from 'axios';
 
 class Contact extends Component {
   constructor(props) {

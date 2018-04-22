@@ -2,7 +2,7 @@ import React,  {Component} from 'react';
 // import{
   // Switch
 // }from 'react-router-dom';
-
+import axios from 'axios';
 class Signup extends Component {
   constructor(props){
     super(props);
