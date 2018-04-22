@@ -50,6 +50,7 @@ if (!dev) {
 const PORT = process.env.PORT || 3001;
 // Serve up static assets
 //app.use(express.static("client/build"));
+
 app.use('/', express.static("./build"));
 
 // Connect to the Mongo DB

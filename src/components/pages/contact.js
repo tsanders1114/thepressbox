@@ -14,13 +14,9 @@ class Contact extends Component {
       message: '',
     }
   }
-  contact(event) {
-    console.log('this.state', this.state);
+  contactFunc() {
 
-    // By default, whenever the form is submitted, the page redirects or reloads.
-    // To prevent that,
-    event.preventDefault();
-
+    console.log("Function Executed!");    
     // Now we need to post the data, one of the most used module is axios
     axios.post('http://localhost:3001/contact', this.state)
       .then(function (response) {
@@ -32,6 +28,7 @@ class Contact extends Component {
 
     // 
     }
+
     render() {
       return (
         <div>
@@ -104,7 +101,7 @@ class Contact extends Component {
                           type="submit"
                           className="btn btn-primary pull-right"
                           id="btnContactUs"
-                          onClick={() => this.contact()}>
+                          onClick={() => this.contactFunc.bind(this)}>
                           Send Message</button>
 
                       </div>
