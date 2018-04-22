@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import world from '../../Assets/images/world.jpg';
 
-import {
-  Switch
-} from 'react-router-dom';
-import CSS from "./about.css";
+// import {
+  // Switch
+// } from 'react-router-dom';
+// import CSS from "./about.css";
 
 
 class About extends Component {

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import independent from '../../Assets/images/independent.jpg';
-import { Grid, Cell } from 'react-mdl';
-import {
-  Switch
-} from 'react-router-dom';
-import Footer from '../footerComponent/footer';
+// import { Grid, Cell } from 'react-mdl';
+// import {
+  // Switch
+// } from 'react-router-dom';
+// import Footer from '../footerComponent/footer';
 import CSS from "./homepage.css";
 
 class Homepage extends Component {
@@ -26,7 +26,7 @@ class Homepage extends Component {
 
 
 
-              <p className="lead"><a class="btn btn-lg btn-info" href="#">Explore Independence</a></p>
+              <p className="lead"><a className="btn btn-lg btn-info" href="#">Explore Independence</a></p>
             </div>
 
             <div className="mastfoot">

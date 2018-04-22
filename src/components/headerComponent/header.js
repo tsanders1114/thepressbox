@@ -11,9 +11,9 @@ class Header extends Component {
           Logo
           </div>
 
-          <nav>
-              <ul>
-                  <li classname="first">
+          <nav className="nav">
+              <ul className="links">
+                  <li className="first">
                   
                   <Link to="/">Home</Link>
                   

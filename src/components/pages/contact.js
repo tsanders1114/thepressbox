@@ -1,11 +1,22 @@
 import React, { Component } from 'react';
-import {
-  Switch
-} from 'react-router-dom';
+// import {
+  // Switch
+// } from 'react-router-dom';
 import independent from '../../Assets/images/independent.jpg';
 
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      emailAddress: '',
+      message: '',
+    }
+  }
+  contact() {
+    console.log('this.state', this.state);
+  }
   render() {
     return (
       <div>
@@ -23,60 +34,80 @@ class Contact extends Component {
           <div className="row">
             <div className="col-md-8">
               <div className="well well-sm">
-                <form>
+                <form className="contact-form">
                   <div className="row">
                     <div className="col-md-6">
                       <div className="form-group">
-                        <label for="name">
+                        <label className="name">
                           Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                        <input className="name-input"
+                          type="text"
+                          className="form-control"
+                          id="name"
+                          placeholder="Enter name"
+                          required="required"
+                          onChange={event => this.setState({ name: event.target.value })}
+                        />
                       </div>
                       <div className="form-group">
-                        <label for="email">
+                        <label className="email">
                           Email Address</label>
-                        <div class="input-group">
-                          <span className="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                        <div className="input-group">
+                          <span className="input-group-addon"><span className="glyphicon glyphicon-envelope"></span>
                           </span>
-                          <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                          <input
+                            type="email"
+                            className="form-control"
+                            id="email"
+                            placeholder="Enter email"
+                            required="required"
+                            onChange={event => this.setState({ emailAddress: event.target.value })}
+                          />
+                        </div>
                       </div>
-                      <div className="form-group">
-                        <label for="subject">
-                          Subject</label>
-                        <select id="subject" name="subject" class="form-control" required="required">
-                          <option value="na" selected="">Choose One:</option>
-                          <option value="service">General Customer Service</option>
-                          <option value="suggestions">Suggestions</option>
-                          <option value="product">Product Support</option>
-                        </select>
-                      </div>
+
                     </div>
                     <div className="col-md-6">
                       <div className="form-group">
-                        <label for="name">
+                        <label className="message">
                           Message</label>
-                        <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-                          placeholder="Message"></textarea>
+                        <textarea
+                          name="message"
+                          id="message"
+                          className="form-control"
+                          rows="9"
+                          cols="25"
+                          required="required"
+                          placeholder="Message"
+                          onChange={event => this.setState({ message: event.target.value })}
+                        />
+
                       </div>
                     </div>
                     <div className="col-md-12">
-                      <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                      <button
+                        type="submit"
+                        className="btn btn-primary pull-right"
+                        id="btnContactUs"
+                        onClick={() => this.contact()}>
                         Send Message</button>
+
                     </div>
                   </div>
                 </form>
               </div>
             </div>
             <div className="col-md-4">
-             <img src={independent}/>s
-          </div>
-      </div>
+              <img src={independent} />
             </div>
           </div>
+        </div>
+      </div>
 
 
 
-          );
-        }
-      }
-      
-      export default Contact;
+    );
+  }
+}
+
+export default Contact;

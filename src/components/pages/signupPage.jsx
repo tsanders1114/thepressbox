@@ -1,7 +1,7 @@
 import React,  {Component} from 'react';
-import{
-  Switch
-}from 'react-router-dom';
+// import{
+  // Switch
+// }from 'react-router-dom';
 
 class Signup extends Component {
   constructor(props){

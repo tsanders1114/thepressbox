@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import africa from '../../Assets/images/africa.jpg';
+// import africa from '../../Assets/images/africa.jpg';
 import europe from '../../Assets/images/europe.jpg';
 import northAmerica1 from '../../Assets/images/northAmerica1.jpg';
 import southAmerica from '../../Assets/images/southAmerica.jpg';
 
-import {
-  Switch
-} from 'react-router-dom';
-import Footer from '../footerComponent/footer';
+// import {
+  // Switch
+// } from 'react-router-dom';
+// import Footer from '../footerComponent/footer';
 // import CSS from "./featuredIndpendence.css";
 
 class Featured extends Component {

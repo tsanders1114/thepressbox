@@ -6,7 +6,7 @@ import {
   Switch
 } from 'react-router-dom';
 import Header from './components/headerComponent/header';
-import Footer from './components/footerComponent/footer';
+// import Footer from './components/footerComponent/footer';
 import Homepage from './components/pages/homePage';
 import About from './components/pages/about';
 import Contact from './components/pages/contact';

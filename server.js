@@ -1,8 +1,23 @@
 const express = require("express");
+const {createServer}=require('http');
+const compression=require('compression');
+const morgan = require('morgan');
+const path=require('path');
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 //onst routes = require("./routes");
 const app = express();
+const dev = app.get('env') !== 'production'
+if(!dev){
+  app.disable('x-powered-by')
+  app.use(compression())
+  app.use(morgan('common'))
+
+  app.use(express.static(path.resolve(__dirname,'build')))
+  app.get('*',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'build','index.html'))
+  })
+}
 const PORT = process.env.PORT || 3001;
 const db = require("./models");
 
