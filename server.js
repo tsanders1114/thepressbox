@@ -1,4 +1,5 @@
 const express = require("express");
+const cheerio = require('cheerio');
 const { createServer } = require('http');
 const compression = require('compression');
 const morgan = require('morgan');
@@ -15,7 +16,7 @@ const LocalStrategy = require('passport-local').Strategy;
 const app = express();
 
 app.use(bodyParser.urlencoded({
-    extended: true
+    extended: false
 })); 
 
 app.use(bodyParser.json());
@@ -47,6 +48,16 @@ if (!dev) {
         res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
     })
 }
+
+var databaseUri = "mongodb://localhost/signuplist";
+if(process.env.MONGODB_URI){
+    mongoose.connect(process.env.MONGODB_URI);
+}else{
+    mongoose.connect(databaseUri);
+}
+
+
+
 const PORT = process.env.PORT || 3001;
 // Serve up static assets
 //app.use(express.static("client/build"));
@@ -54,7 +65,6 @@ const PORT = process.env.PORT || 3001;
 app.use('/', express.static("./build"));
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/signuplist");
 const connection = mongoose.connection;
 connection.once("open", function () {
     console.log("Mongoose DB Connected");
