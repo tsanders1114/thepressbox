@@ -26,7 +26,7 @@ class Homepage extends Component {
 
 
 
-              <p className="lead"><a className="btn btn-lg btn-info" href="#">Explore Independence</a></p>
+              <p className="lead"><a className="btn btn-lg btn-info" href="/Featured">Explore Independence</a></p>
             </div>
 
             <div className="mastfoot">

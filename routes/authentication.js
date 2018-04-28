@@ -2,7 +2,7 @@
 
 const
     router = require('express').Router(),
-    Account = require('../models/index').Account,
+    Account = require('../models/index').Authenticator,
     passport = require('passport');
     Axios=require('axios');
 

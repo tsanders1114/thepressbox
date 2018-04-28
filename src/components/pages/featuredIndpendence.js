@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import europe from '../../Assets/images/europe.jpg';
 import northAmerica1 from '../../Assets/images/northAmerica1.jpg';
 import southAmerica from '../../Assets/images/southAmerica.jpg';
+import CSS from './featuredIndpendence.css';
 
 // import {
   // Switch
@@ -22,7 +23,7 @@ class Featured extends Component {
           <div className="row">
             <div className="col-sm-4">
               <p className="text-center"><strong>North America</strong></p><br />
-              <a href="#demo" data-toggle="collapse">
+              <a href="/NorthContent" data-toggle="collapse">
                 <button><img src={northAmerica1} class="img-circle person" alt="Random Name" width="255" height="255" /> </button>
               </a>
               <div id="demo" class="collapse">
@@ -33,7 +34,7 @@ class Featured extends Component {
 
             <div className="col-sm-4">
               <p className="text-center"><strong>South America</strong></p><br />
-              <a href="#demo2" data-toggle="collapse">
+              <a href="/SouthContent" data-toggle="collapse">
                 <button><img src={southAmerica} class="img-circle person" alt="Random Name" width="255" height="255" /></button>
               </a>
               <div id="demo2" class="collapse">
@@ -41,7 +42,7 @@ class Featured extends Component {
             </div>
             <div className="col-sm-4">
               <p className="text-center"><strong>Europe</strong></p><br />
-              <a href="#demo3" data-toggle="collapse">
+              <a href="/EuropeContent" data-toggle="collapse">
                 <button><img src={europe} class="img-circle person" alt="Random Name" width="255" height="255" /></button>
               </a>
               <div id="demo3" class="collapse">
