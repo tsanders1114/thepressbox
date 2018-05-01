@@ -21,28 +21,44 @@ class EuropeContent extends Component {
                     <h2>Indie Film Creators</h2>
                         <div className="col-xs-6 col-md-3">
                         <iframe width="300" height="200" src="https://www.youtube.com/embed/Z1Ip5HQ5m8o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        
+                        <a href="/SampleIndie" data-toggle="collapse">
+                                <button class="btn btn-default btn-lg" type="button" aria-haspopup="true" aria-expanded="false">
+                                    Large button
+                                </button>
+                                </a>
                             {/* <a href="#" className="thumbnail" /> */}
                             {/* <img src="#" alt="#" /> */}
                         </div>
 
                         <div className="col-xs-6 col-md-3">
                         <iframe width="300" height="200" src="https://www.youtube.com/embed/Z1Ip5HQ5m8o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+                        <a href="/SampleIndie" data-toggle="collapse">
+                                <button class="btn btn-default btn-lg" type="button" aria-haspopup="true" aria-expanded="false">
+                                    Large button
+                                </button>
+                                </a>
                             {/* <a href="#" className="thumbnail" /> */}
                             {/* <img src="#" alt="#" /> */}
                         </div>
 
                         <div className="col-xs-6 col-md-3">
                         <iframe width="300" height="200" src="https://www.youtube.com/embed/Z1Ip5HQ5m8o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+                        <a href="/SampleIndie" data-toggle="collapse">
+                                <button class="btn btn-default btn-lg" type="button" aria-haspopup="true" aria-expanded="false">
+                                    Large button
+                                </button>
+                                </a>
                             {/* <a href="#" className="thumbnail" /> */}
                             {/* <img src="#" alt="#" /> */}
                         </div>
 
                         <div className="col-xs-6 col-md-3">
                         <iframe width="300" height="200" src="https://www.youtube.com/embed/Z1Ip5HQ5m8o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+                        <a href="/SampleIndie" data-toggle="collapse">
+                                <button class="btn btn-default btn-lg" type="button" aria-haspopup="true" aria-expanded="false">
+                                    Large button
+                                </button>
+                                </a>
                             {/* <a href="#" className="thumbnail" /> */}
                             {/* <img src="#" alt="#" /> */}
                         </div>
@@ -52,28 +68,44 @@ class EuropeContent extends Component {
                     <h2>Indie Music Creators</h2>
                         <div className="col-xs-6 col-md-3">
                         <iframe width="300" height="200" src="https://www.youtube.com/embed/Z1Ip5HQ5m8o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+                        <a href="/SampleIndie" data-toggle="collapse">
+                                <button class="btn btn-default btn-lg" type="button" aria-haspopup="true" aria-expanded="false">
+                                    Large button
+                                </button>
+                                </a>
                             {/* <a href="#" className="thumbnail" /> */}
                             {/* <img src="#" alt="#" /> */}
                         </div>
 
                         <div className="col-xs-6 col-md-3">
                         <iframe width="300" height="200" src="https://www.youtube.com/embed/Z1Ip5HQ5m8o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+                        <a href="/SampleIndie" data-toggle="collapse">
+                                <button class="btn btn-default btn-lg" type="button" aria-haspopup="true" aria-expanded="false">
+                                    Large button
+                                </button>
+                                </a>
                             {/* <a href="#" className="thumbnail" /> */}
                             {/* <img src="#" alt="#" /> */}
                         </div>
 
                         <div className="col-xs-6 col-md-3">
                         <iframe width="300" height="200" src="https://www.youtube.com/embed/Z1Ip5HQ5m8o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+                        <a href="/SampleIndie" data-toggle="collapse">
+                                <button class="btn btn-default btn-lg" type="button" aria-haspopup="true" aria-expanded="false">
+                                    Large button
+                                </button>
+                                </a>
                             {/* <a href="#" className="thumbnail" /> */}
                             {/* <img src="#" alt="#" /> */}
                         </div>
 
                         <div className="col-xs-6 col-md-3">
                         <iframe width="300" height="200" src="https://www.youtube.com/embed/Z1Ip5HQ5m8o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+                        <a href="/SampleIndie" data-toggle="collapse">
+                                <button class="btn btn-default btn-lg" type="button" aria-haspopup="true" aria-expanded="false">
+                                    Large button
+                                </button>
+                                </a>
                             {/* <a href="#" className="thumbnail" /> */}
                             {/* <img src="#" alt="#" /> */}
                         </div>

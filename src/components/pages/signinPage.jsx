@@ -1,9 +1,7 @@
 import React,  {Component} from 'react';
-// import{
-  // Switch
-// }from 'react-router-dom';
+
 import axios from 'axios';
-class Signup extends Component {
+class Signin extends Component {
   constructor(props){
     super(props);
     this.state={
@@ -12,10 +10,10 @@ class Signup extends Component {
     }
   }
 
-  signUp(event){
+  signIn(event){
     console.log('this.state',this.state);
     // event.preventDefault();
-		axios.post('http://localhost:3001/signup', this.state)
+		axios.post('http://localhost:3001/signin', this.state)
 			.then(function (response) {
 				alert(response.data);
 			})
@@ -26,7 +24,7 @@ class Signup extends Component {
   render() {
     return (
      <div className="form-inline">
-      <h2>Sign Up</h2>
+      <h2>Sign In</h2>
       <div className="form-group">
         <input
           className="form-control"
@@ -44,9 +42,9 @@ class Signup extends Component {
         <button
           className="btn btn-primary"
           type="button"
-          onClick={()=>this.signUp()}
+          onClick={()=>this.signIn()}
         >
-        Sign Up
+        Sign In
         </button>
         </div>
 
@@ -55,5 +53,4 @@ class Signup extends Component {
   }
 }
 
-export default Signup;
-
+export default Signin;

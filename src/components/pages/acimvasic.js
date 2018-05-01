@@ -1,12 +1,10 @@
- import React, { Component } from 'react';
-// // import {
-// // Switch
- // } from 'react-router-dom';
- import independent from '../../Assets/images/independent.jpg';
- import axios from 'axios';
- import CSS from './sampleIndie.css';
+import React, { Component } from 'react';
 
- class SampleIndie extends Component {
+import independent from '../../Assets/images/independent.jpg';
+ import axios from 'axios';
+import CSS from './sampleIndie.css';
+
+ class AcimvasicIndie extends Component {
  
      render() {
        return (
@@ -15,10 +13,9 @@
          <section className="row">
            <div className="col-xs-8">
              <article className="aboutMeContent">
-               <h1 className="about-me-header">Maximilian Raboin</h1>
-               Again - Short Film - (2016)
-               <iframe width="500" height="300" src="https://www.youtube.com/embed/Z1Ip5HQ5m8o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-               
+               <h1 className="about-me-header">Aćimvasić</h1>
+              <h5>" 8 " - (a short film)</h5>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/He9FeJZua20" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
              </article>
            </div>
            <div className="col-md-4">
@@ -46,4 +43,4 @@
      }
    }
 
-export default SampleIndie;
+export default AcimvasicIndie;

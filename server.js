@@ -16,8 +16,11 @@ const LocalStrategy = require('passport-local').Strategy;
 const app = express();
 
 app.use(bodyParser.urlencoded({
-    extended: false
+    extended: true
 })); 
+app.use(cors({
+    origin: 'http://localhost:3000'
+}));
 
 app.use(bodyParser.json());
 app.use(cookieParser());
@@ -43,7 +46,7 @@ if (!dev) {
     app.use(compression())
     app.use(morgan('common'))
 
-    app.use(express.static(path.resolve(__dirname, 'build')))
+    app.use(express.static(path.resolve(__dirname, 'build')));
     app.get('*', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
     })
@@ -65,10 +68,16 @@ const PORT = process.env.PORT || 3001;
 app.use('/', express.static("./build"));
 
 // Connect to the Mongo DB
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/signuplist");
 const connection = mongoose.connection;
 connection.once("open", function () {
     console.log("Mongoose DB Connected");
 });
+
+//const connection = mongoose.connection;
+//connection.once("open", function () {
+  //  console.log("Mongoose DB Connected");
+//});
 
 app.use('/', require('./routes/index'));
 

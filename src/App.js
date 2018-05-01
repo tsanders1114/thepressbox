@@ -12,6 +12,9 @@ import About from './components/pages/about';
 import Contact from './components/pages/contact';
 import Featured from './components/pages/featuredIndpendence';
 import Signup from './components/pages/signupPage.jsx';
+import Signin from './components/pages/signinPage.jsx';
+
+
 import SampleIndie from './components/pages/sampleIndie';
 import SouthAmerica from './components/pages/southAmericaContent';
 import NorthAmerica from './components/pages/northAmericaContent';
@@ -19,6 +22,7 @@ import NorthAmerica from './components/pages/northAmericaContent';
 import SouthContent from './components/pages/southAmericaContent';
 import EuropeContent from './components/pages/europeContent';
 import NorthContent from './components/pages/northAmericaContent';
+import AcimvasicIndie from './components/pages/acimvasic';
 class App extends Component {
   render() {
     return (
@@ -36,6 +40,7 @@ class App extends Component {
             <Route exact path='/NorthContent'component={NorthContent}/>
             <Route exact path='/SouthContent'component={SouthContent}/>
             <Route exact path='/EuropeContent'component={EuropeContent}/>
+            <Route exact path='/AcimvasicIndie'component={AcimvasicIndie}/>
           </Switch>
 
 

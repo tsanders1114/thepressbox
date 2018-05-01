@@ -27,8 +27,22 @@ router.post('/signup', function (req, res) {
     });
 });;
 
-router.post('/signin', passport.authenticate('local'), function (req, res) {
-    res.send("LOGGEDIN");
+router.post('/signin', function(req, res, next) {
+    passport.authenticate('local', function(err, user, info) {
+        if (err) {
+            res.send('error 500');
+        }
+
+        if (! user) {
+            res.send('unauthorized user');
+        }
+        req.login(user, loginErr => {
+            if (loginErr) {
+                return next(loginErr);
+            }
+            res.send('Login success');
+        });
+    })(req, res, next);
 });
 
 router.get('/logout', function (req, res) {
