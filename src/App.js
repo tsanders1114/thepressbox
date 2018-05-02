@@ -23,6 +23,9 @@ import SouthContent from './components/pages/southAmericaContent';
 import EuropeContent from './components/pages/europeContent';
 import NorthContent from './components/pages/northAmericaContent';
 import AcimvasicIndie from './components/pages/acimvasic';
+import BornsIndie from './components/pages/borns';
+import JamesBayIndie from './components/pages/jamesbay';
+
 class App extends Component {
   render() {
     return (
@@ -40,6 +43,8 @@ class App extends Component {
             <Route exact path='/NorthContent'component={NorthContent}/>
             <Route exact path='/SouthContent'component={SouthContent}/>
             <Route exact path='/EuropeContent'component={EuropeContent}/>
+            <Route exact path='/BornsIndie'component={BornsIndie}/>
+            <Route exact path='/JamesBayIndie'component={JamesBayIndie}/>
             <Route exact path='/AcimvasicIndie'component={AcimvasicIndie}/>
           </Switch>
 

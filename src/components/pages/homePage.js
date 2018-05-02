@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import independent from '../../Assets/images/independent.jpg';
 // import { Grid, Cell } from 'react-mdl';
-// import {
-  // Switch
-// } from 'react-router-dom';
+import {
+  Link
+} from 'react-router-dom';
 // import Footer from '../footerComponent/footer';
 import CSS from "./homepage.css";
 
@@ -15,7 +15,7 @@ class Homepage extends Component {
           <div className="cover-container">
             <div className="masthead clearfix">
               <div className="inner">
-                <h3 className="masthead-brand">The PressBox</h3>
+                <h1 className="masthead-brand">The PressBox</h1>
 
 
               </div>
@@ -26,7 +26,7 @@ class Homepage extends Component {
 
 
 
-              <p className="lead"><a className="btn btn-lg btn-info" href="/Featured">Explore Independence</a></p>
+             <span className="btn btn-lg btn-info"><Link to="/Featured">Explore Independence</Link></span>
             </div>
 
             <div className="mastfoot">

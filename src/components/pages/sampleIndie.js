@@ -2,6 +2,8 @@
 // // import {
 // // Switch
  // } from 'react-router-dom';
+import facebook from '../../Assets/images/facebook.jpg';
+ 
  import independent from '../../Assets/images/independent.jpg';
  import axios from 'axios';
  import CSS from './sampleIndie.css';
@@ -17,6 +19,8 @@
              <article className="aboutMeContent">
                <h1 className="about-me-header">Maximilian Raboin</h1>
                Again - Short Film - (2016)
+               <h6>A man (Maximilian Raboin) mourning the death of his loved one (Ines Hoeysater Asserson), is psychologically tortured as he follows someone that reminds him of her.</h6>
+               
                <iframe width="500" height="300" src="https://www.youtube.com/embed/Z1Ip5HQ5m8o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                
              </article>
@@ -26,12 +30,13 @@
              {/* <!-- Start of Connect With Me Area --> */}
              <section id="connect-with-me-area">
                <div className="connect-with-me-content">
-                 <h1 className="connect-with-me-header">Connect With Me</h1>
+                 <h2 className="connect-with-me-header">Click To Connect With Me</h2>
                  {/* </hr> */}
                  <div id="images">
-                   <img src="assets/imgs/github.png" alt="" className="connect-with-me-photo"/>
-                   <img src="assets/imgs/linkedin.png" alt="" className="connect-with-me-photo"/>
-                   <img src="assets/imgs/stackover2.png" alt="" className="connect-with-me-photo"/>
+                 <a href="https://www.facebook.com/maximilian.raboin">
+                 
+                   <img src={facebook} alt="" className="connect-with-me-photo"/>
+                   </a>
                  </div>
                </div>
              </section>

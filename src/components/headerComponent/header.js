@@ -3,12 +3,16 @@ import{
     Link
 }from 'react-router-dom';
 
+import indiefilm2 from '../../Assets/images/indiefilm2.jpg';
+
 class Header extends Component {
   render() {
     return (
       <header className="header-color">
           <div className="logo">
-          Logo
+          <img src={indiefilm2} alt="logo"/>
+          {/* <img src={facebook} alt="" className="connect-with-me-photo"/> */}
+          
           </div>
 
           <nav className="nav">

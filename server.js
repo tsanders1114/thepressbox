@@ -1,5 +1,5 @@
 const express = require("express");
-//const cheerio = require('cheerio');
+const cheerio = require('cheerio');
 const { createServer } = require('http');
 const compression = require('compression');
 const morgan = require('morgan');

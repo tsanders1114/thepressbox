@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
-import indiemusic3 from '../../Assets/images/indiemusic3.jpg';
+// import indiemusic3 from '../../Assets/images/.jpg';
+import borns from '../../Assets/images/borns.jpg';
+import Max from '../../Assets/images/Max.jpg';
+import again from '../../Assets/images/again.png';
+import james from '../../Assets/images/james.jpg';
+import acim from '../../Assets/images/acim.jpg';
 import indiefilm from '../../Assets/images/indiefilm.jpg';
+import indiemusic3 from '../../Assets/images/indiemusic3.jpg';
+
+
+
+import northAmerica from '../../Assets/images/northAmerica.jpg';
+
 
 // import { Grid, Cell } from 'react-mdl';
 // import {
@@ -16,15 +27,13 @@ class NorthContent extends Component {
             <div className="northcontainer1">
                 <div class="jumbotron">
                     <h1>North America Creators</h1>
-                    <p>...</p>
-                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                    <img src={northAmerica} alt="Random Name" width="100" height="200" />
                 </div>
                 <div class="video-container">
                     <div className="row">
                         <h2>Indie Film Creators</h2>
                         <div className="col-xs-6 col-md-3">
-                            <h6>A man (Maximilian Raboin) mourning the death of his loved one (Ines Hoeysater Asserson), is psychologically tortured as he follows someone that reminds him of her.</h6>
-                            <iframe width="300" height="200" src="https://www.youtube.com/embed/Z1Ip5HQ5m8o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <img src={Max} class="img-circle person" alt="Random Name" width="355" height="255" /> 
                             <a href="/SampleIndie" data-toggle="collapse">
                                 <button class="btn btn-default btn-lg" type="button" aria-haspopup="true" aria-expanded="false">
                                     Maximilian Raboin
@@ -35,9 +44,8 @@ class NorthContent extends Component {
                         </div>
 
                         <div className="col-xs-6 col-md-3">
-                            <h6>In the depths of a snowy forest in an unknown wartime, two soldiers from opposing armies try to outwit each other in a perilous game of Tic-Tac-Toe, until they find themselves outplayed by karma.</h6>
+                            <img src={acim} class="img-circle person" alt="Random Name" width="355" height="255" />
 
-                            <iframe width="300" height="200" src="https://www.youtube.com/embed/He9FeJZua20" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <a href="/AcimvasicIndie" data-toggle="collapse">
                                 <button class="btn btn-default btn-lg" type="button" aria-haspopup="true" aria-expanded="false">
                                     Aćimvasić
@@ -48,7 +56,7 @@ class NorthContent extends Component {
                         </div>
                         <div className="row">
                             <div className="col-xs-3 col-md-5">
-                                <img src={indiefilm} />
+                                <img src={indiefilm} /> 
                             </div>
                         </div>
 
@@ -58,10 +66,11 @@ class NorthContent extends Component {
                     <div className="row">
                         <h2>Indie Music Creators</h2>
                         <div className="col-xs-6 col-md-3">
-                            <iframe width="300" height="200" src="https://www.youtube.com/embed/Z1Ip5HQ5m8o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <a href="/SampleIndie" data-toggle="collapse">
+                        <img src={borns} class="img-circle person" alt="Random Name" width="355" height="255" /> 
+                       
+                            <a href="/BornsIndie" data-toggle="collapse">
                                 <button class="btn btn-default btn-lg" type="button" aria-haspopup="true" aria-expanded="false">
-                                    Large button
+                                BØRNS 
                                 </button>
                             </a>
                             {/* <a href="#" className="thumbnail" /> */}
@@ -69,10 +78,12 @@ class NorthContent extends Component {
                         </div>
 
                         <div className="col-xs-6 col-md-3">
-                            <iframe width="300" height="200" src="https://www.youtube.com/embed/Z1Ip5HQ5m8o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <a href="/SampleIndie" data-toggle="collapse">
+
+                        <img src={james} class="img-circle person" alt="Random Name" width="355" height="255" /> 
+
+                            <a href="/JamesBayIndie" data-toggle="collapse">
                                 <button class="btn btn-default btn-lg" type="button" aria-haspopup="true" aria-expanded="false">
-                                    Large button
+                                James Bay
                                 </button>
                             </a>
                             {/* <a href="#" className="thumbnail" /> */}

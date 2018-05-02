@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import facebook2 from '../../Assets/images/facebook2.jpg';
 
 import independent from '../../Assets/images/independent.jpg';
+import facebook3 from '../../Assets/images/facebook3.jpg';
+
+import northAmerica2 from '../../Assets/images/northAmerica2.png';
+
  import axios from 'axios';
 import CSS from './sampleIndie.css';
 
- class AcimvasicIndie extends Component {
+ class BornsIndie extends Component {
  
      render() {
        return (
@@ -14,11 +17,9 @@ import CSS from './sampleIndie.css';
          <section className="row">
            <div className="col-xs-8">
              <article className="aboutMeContent">
-               <h1 className="about-me-header">Aćimvasić</h1>
-              <h5>" 8 " - (a short film)</h5>
-              <h6>In the depths of a snowy forest in an unknown wartime, two soldiers from opposing armies try to outwit each other in a perilous game of Tic-Tac-Toe, until they find themselves outplayed by karma.</h6>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/He9FeJZua20" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
-             
+               <h1 className="about-me-header">Borns</h1>
+              <h5>American Money</h5>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/pLBmqwA4AGc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
              </article>
            </div>
            <div className="col-md-4">
@@ -29,8 +30,8 @@ import CSS from './sampleIndie.css';
                  <h1 className="connect-with-me-header">Click To Connect With Me</h1>
                  {/* </hr> */}
                  <div id="images">
-                 <a href="https://www.facebook.com/cortofix/?hc_ref=ARSXrImwa0wjnQGdzgx-l1AacJREXVd4TK8rIiE78-DkU7iW9IMBAePfZ0gjLr6Vyx8&fref=nf">
-                   <img src={facebook2} alt="" className="connect-with-me-photo"/>
+                 <a href="https://www.facebook.com/bornsmusic/">
+                   <img src={facebook3} alt="" className="connect-with-me-photo"/>
                    </a>
                  </div>
                </div>
@@ -46,4 +47,4 @@ import CSS from './sampleIndie.css';
      }
    }
 
-export default AcimvasicIndie;
+export default BornsIndie;

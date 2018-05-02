@@ -1,6 +1,12 @@
 body {
     font: 400 15px/1.8 Lato, sans-serif;
-    color: #777;
+    color: rgb(245, 210, 10);
+    text-shadow: #000;
+
+}
+
+button{
+    align-self: auto;
 }
 h3, h4 {
     margin: 10px 0 30px 0;
